@@ -86,8 +86,8 @@ public:
   itkNewMacro( Self );
 
 protected:
-  ModifiedButterflyTriangleCellSubdivisionQuadEdgeMeshFilter() {}
-  ~ModifiedButterflyTriangleCellSubdivisionQuadEdgeMeshFilter() override {}
+  ModifiedButterflyTriangleCellSubdivisionQuadEdgeMeshFilter() = default;
+  ~ModifiedButterflyTriangleCellSubdivisionQuadEdgeMeshFilter() override = default;
 
   void AddNewCellPoints( InputCellType *cell ) override;
 };

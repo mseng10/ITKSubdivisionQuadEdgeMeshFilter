@@ -74,7 +74,7 @@ public:
 protected:
   IterativeTriangleCellSubdivisionQuadEdgeMeshFilter();
 
-  ~IterativeTriangleCellSubdivisionQuadEdgeMeshFilter() override {}
+  ~IterativeTriangleCellSubdivisionQuadEdgeMeshFilter() override = default;
 
   void GenerateData() override;
 

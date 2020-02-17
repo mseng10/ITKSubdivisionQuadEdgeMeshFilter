@@ -83,8 +83,8 @@ public:
   itkNewMacro( Self );
 
 protected:
-  LinearTriangleEdgeCellSubdivisionQuadEdgeMeshFilter() {}
-  ~LinearTriangleEdgeCellSubdivisionQuadEdgeMeshFilter() override {}
+  LinearTriangleEdgeCellSubdivisionQuadEdgeMeshFilter() = default;
+  ~LinearTriangleEdgeCellSubdivisionQuadEdgeMeshFilter() override = default;
 
   void AddNewEdgePoints( InputQEType * edge ) override;
 };

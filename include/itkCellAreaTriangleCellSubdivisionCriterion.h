@@ -71,7 +71,7 @@ public:
 
 protected:
   CellAreaTriangleCellSubdivisionCriterion(){ m_MaximumArea = NumericTraits< CoordRepType >::max(); }
-  ~CellAreaTriangleCellSubdivisionCriterion() override{}
+  ~CellAreaTriangleCellSubdivisionCriterion() override= default;
 
 private:
   CoordRepType m_MaximumArea;

@@ -108,8 +108,8 @@ public:
   /** New macro for creation of through a Smart Pointer   */
   itkNewMacro( Self );
 protected:
-  LoopTriangleCellSubdivisionQuadEdgeMeshFilter() {}
-  ~LoopTriangleCellSubdivisionQuadEdgeMeshFilter() override {}
+  LoopTriangleCellSubdivisionQuadEdgeMeshFilter() = default;
+  ~LoopTriangleCellSubdivisionQuadEdgeMeshFilter() override = default;
 
   void CopyInputMeshToOutputMeshPoints() override;
 

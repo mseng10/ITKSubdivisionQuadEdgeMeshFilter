@@ -75,7 +75,7 @@ public:
 protected:
   ConditionalSubdivisionQuadEdgeMeshFilter();
 
-  ~ConditionalSubdivisionQuadEdgeMeshFilter() override {}
+  ~ConditionalSubdivisionQuadEdgeMeshFilter() override = default;
 
   void GenerateData() override;
 

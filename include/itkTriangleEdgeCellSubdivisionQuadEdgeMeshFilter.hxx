@@ -26,8 +26,7 @@ namespace itk
 template< typename TInputMesh, typename TOutputMesh >
 TriangleEdgeCellSubdivisionQuadEdgeMeshFilter< TInputMesh, TOutputMesh >
 ::TriangleEdgeCellSubdivisionQuadEdgeMeshFilter()
-{
-}
+= default;
 
 template< typename TInputMesh, typename TOutputMesh >
 void
