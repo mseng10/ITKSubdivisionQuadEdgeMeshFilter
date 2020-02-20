@@ -104,7 +104,7 @@ TriangleCellSubdivisionQuadEdgeMeshFilter< TInputMesh, TOutputMesh >
     {
     InputCellType* cell = cellIt->Value();
 
-    if ( !cell || cell->GetType() != InputCellType::POLYGON_CELL || cell->GetNumberOfPoints() != 3 )
+    if ( !cell || cell->GetType() != CellGeometryEnum::POLYGON_CELL || cell->GetNumberOfPoints() != 3 )
       {
       continue;
       }

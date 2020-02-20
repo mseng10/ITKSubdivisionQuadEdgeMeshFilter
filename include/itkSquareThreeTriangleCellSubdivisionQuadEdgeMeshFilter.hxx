@@ -27,7 +27,7 @@ void
 SquareThreeTriangleCellSubdivisionQuadEdgeMeshFilter< TInputMesh, TOutputMesh >
 ::AddNewCellPoints( InputCellType *cell )
 {
-  if ( cell->GetType() != InputCellType::POLYGON_CELL || cell->GetNumberOfPoints() != 3 )
+  if ( cell->GetType() != CellGeometryEnum::POLYGON_CELL || cell->GetNumberOfPoints() != 3 )
     {
     itkExceptionMacro(<<" The input cell is not a triangle cell");
     }
@@ -103,7 +103,7 @@ SquareThreeTriangleCellSubdivisionQuadEdgeMeshFilter< TInputMesh, TOutputMesh >
     {
     InputCellType* cell = cellIt->Value();
 
-    if ( cell->GetType() != InputCellType::POLYGON_CELL || cell->GetNumberOfPoints() != 3 )
+    if ( cell->GetType() != CellGeometryEnum::POLYGON_CELL || cell->GetNumberOfPoints() != 3 )
       {
       continue;
       }
